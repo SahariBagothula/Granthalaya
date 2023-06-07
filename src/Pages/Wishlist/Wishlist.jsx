@@ -52,7 +52,7 @@ export const WishList = () => {
                 {rating}
               </p>
               <div>
-                <button
+                <button className="button"
                   onClick={() => {
                     removeFromWishlist(_id, userToken);
                   }}
@@ -60,11 +60,11 @@ export const WishList = () => {
                   Remove from wishlist
                 </button>
                 {inCart(_id) ? (
-                  <button onClick={() => handleQuantity("increment", _id, userToken)}>
+                  <button className="button" onClick={() => handleQuantity("increment", _id, userToken)}>
                     <NavLink to="/cart">Add more to cart</NavLink>{" "}
                   </button>
                 ) : (
-                  <button
+                  <button className="button"
                     onClick={() => {
                       addToCart(item, userToken);
                     }}

@@ -52,7 +52,7 @@ export const AuthenticationProvider = ({ children }) => {
       });
       // setUserToken(encodedToken);
       authDispatch({ type: "HANDLE_SIGN_IN", payload: true });
-      navigate("/products");
+      navigate("/");
     } catch (error) {
       console.error(error);
     }

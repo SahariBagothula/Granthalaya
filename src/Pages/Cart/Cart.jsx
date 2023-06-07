@@ -55,21 +55,19 @@ const Cart = () => {
                 {rating}
               </p>
               <div>
-              <button
+              <button className="button"
                         onClick={() => handleQuantity("decrement", _id, userToken)}
-                        className="mycart-quantity-btn"
                       >
                         -
                       </button>
                       <span className="quantity"> {qty} </span>
 
-                      <button
+                      <button className="button"
                         onClick={() => handleQuantity("increment", _id, userToken)}
-                        className="mycart-quantity-btn"
                       >
                         +
                       </button>
-                <button
+                <button className="button"
                   onClick={() => {
                     removeFromCart(_id, userToken);
                   }}
@@ -77,11 +75,11 @@ const Cart = () => {
                   Remove from Cart
                 </button>
                 {inWishlist(_id) ? (
-                  <button>
+                  <button className="button">
                     <NavLink to="/wishlist">Go to Wishlist</NavLink>
                   </button>
                 ) : (
-                  <button
+                  <button className="button"
                     onClick={() => {
                       addToWishlist(item, userToken);
                     }}
