@@ -1,0 +1,32 @@
+.mainBooksCard {
+  display: flex;
+  flex-wrap: wrap;
+  width: 75vw;
+  margin: auto;
+}
+
+.subBooksCard {
+  margin: 10px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  padding: 0px 20px 10px 20px;
+  border-radius: 10px;
+}
+
+.mainBooksDisplay {
+  display: flex;
+  gap: 2rem;
+  width: 100vw;
+  justify-content: space-between;
+}
+
+.sideBarBookDisplay {
+  display: flex;
+  flex-direction: column;
+  width: 25vw;
+  flex-wrap: wrap;
+}
+
+.clearButton {
+  display: flex;
+  justify-content: space-between;
+}

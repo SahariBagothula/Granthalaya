@@ -1,0 +1,33 @@
+.App {
+    color: rgba(0, 0, 0, 0.7);
+  }
+  
+  body {
+    margin: 0;
+    padding: 0;
+  }
+
+  .nav-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 2rem;
+    box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.2);
+    background-color: lightskyblue;
+  }
+
+ .nav-wrapper h1 a{
+    color: white;
+    text-decoration: none;
+ }
+
+  .nav-right-side {
+    display: flex;
+    gap: 2rem;
+    font-size: 1.5rem;
+  }
+
+ .nav-right-side svg {
+    color: white;
+ }
+  

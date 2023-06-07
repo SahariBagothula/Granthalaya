@@ -1,0 +1,11 @@
+.mainBooksCard {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.subBooksCard {
+  margin: 10px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  padding: 0px 20px 10px 20px;
+  border-radius: 10px;
+}

@@ -1,0 +1,18 @@
+.address_div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  padding: 1rem;
+  flex-direction: column;
+  border: 1.5px solid gainsboro;
+  border-radius: 5px;
+  width: 25rem;
+}
+
+.address_div input {
+  padding: 0.4rem;
+  width: 20rem;
+  border: 1.5px solid gainsboro;
+  border-radius: 5px;
+}
