@@ -26,7 +26,7 @@ const BookDetails = () => {
 
   return (
     <>
-      <div className="mainBooksCard1">
+      <div className="mainBookDetailsCard">
         {bookToBeDisplayed?.map(
           (
           item
@@ -42,7 +42,7 @@ const BookDetails = () => {
               rating} = item;
 
            return (
-            <div key={_id} className="subBooksCard1">
+            <div key={_id} className="subBookDetailsCard">
               <div>
               <img src={img} alt="book" height="300" width="200" />
               </div>

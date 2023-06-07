@@ -1,11 +1,17 @@
-.mainBooksCard {
+.mainBookDetailsCard {
   display: flex;
   flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
 }
 
-.subBooksCard {
+.subBookDetailsCard {
   margin: 10px;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-  padding: 0px 20px 10px 20px;
+  padding: 1rem 1rem 1rem 1rem;
   border-radius: 10px;
+  display: flex;
+  gap: 2rem;
+ 
 }
