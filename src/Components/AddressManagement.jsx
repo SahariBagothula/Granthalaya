@@ -23,6 +23,7 @@ const AddressManagement = () => {
   } = useContext(AddressContext);
 
   return (
+    <div className="addressManagementMainCard">
     <div className="address-management">
       {!showAddAddress && (
         <div className="add-address-button" onClick={handleAddAddress}>
@@ -210,6 +211,7 @@ const AddressManagement = () => {
           </div>
         </div>
       ))}
+    </div>
     </div>
   );
 };

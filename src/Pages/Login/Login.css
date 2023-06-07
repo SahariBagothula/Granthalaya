@@ -27,8 +27,8 @@
   margin-top: 0.5rem;
   color: whitesmoke;
   display: inline-block;
-  border: 1.5px solid #b21368;
-  background-color: #b21368;
+border: 1.5px solid var(--primary-color);
+  background-color: var(--primary-color);
 }
 .sign_in_btn:active {
   width: 13%;
@@ -46,8 +46,8 @@
   margin-top: 0.5rem;
   color: whitesmoke;
   display: inline-block;
-  border: 1px solid #b21368;
-  background-color: #b21368;
+  border: 1px solid var(--primary-color);
+  background-color: var(--primary-color);
 }
 
 .sign_in_as_guest_btn:active {
@@ -74,5 +74,5 @@
 }
 
 .guest_color {
-  color: #b21368;
+  color: var(--primary-color);
 }

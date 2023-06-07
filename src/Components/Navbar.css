@@ -13,7 +13,7 @@
     justify-content: space-between;
     padding: 0 2rem;
     box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.2);
-    background-color: lightskyblue;
+    background-color: rgb(255, 191, 0);
   }
 
  .nav-wrapper h1 a{
@@ -31,3 +31,6 @@
     color: white;
  }
   
+ .nav-search input {
+    border-radius: 0.5rem;
+ }

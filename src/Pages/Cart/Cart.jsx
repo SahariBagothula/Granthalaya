@@ -3,6 +3,7 @@ import { NavLink } from "react-router-dom";
 import { AuthenticationContext } from "../../Contexts/AuthenticationContext";
 import { CartContext } from "../../Contexts/CartContext";
 import { WishListContext } from "../../Contexts/WishlistContext";
+import CartBilling from "../Checkout/CartBilling";
 import "./Cart.css";
 
 const Cart = () => {
@@ -94,6 +95,7 @@ const Cart = () => {
           );
         })}
       </div>
+      <CartBilling/>
     </>
   );
 };

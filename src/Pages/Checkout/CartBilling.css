@@ -1,0 +1,20 @@
+.mainCartPriceCard {
+    display: flex;
+    justify-content: center;
+}
+
+.cartPriceCard {
+    width: 300px;
+    box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.2);
+    padding: 2rem;
+    border-radius: 1rem;
+}
+
+.cartPriceCardHeading {
+    font-weight: 700;
+}
+
+.priceDetails {
+    display: flex;
+    justify-content: space-between;
+}

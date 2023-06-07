@@ -1,17 +1,19 @@
 
 .address-management {
     margin-top: 2rem;
-    height: 50vh;
-    overflow: scroll;
-    overflow-x: hidden;
     padding: 1.5rem;
     box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.2);
     border-radius: 10px;
+    margin-bottom: 2rem;
+    width: 500px;
+
+    
   }
   
-  /* .address-fields {
-    text-align: left;
-  } */
+  .addressManagementMainCard {
+    display: flex;
+    justify-content: center;
+  }
   
   .address-fields input,
   .address-fields textarea {

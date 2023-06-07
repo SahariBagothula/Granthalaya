@@ -35,6 +35,7 @@ const BooksDisplay = () => {
         <h3>Filters</h3>
       <button onClick={handleClearFilters}>Clear</button>
       </div>
+      <div className="categoriesCard">
         <div>
           <div><h3>Category</h3></div>
       <label>
@@ -69,7 +70,9 @@ const BooksDisplay = () => {
         Self Help
       </label>
       </div>
-      <div>
+      </div>
+      <div className="sortingCard">
+        <div>
       <div><h3>Sort by</h3></div>
       <label>
         <input
@@ -92,6 +95,8 @@ const BooksDisplay = () => {
         High to Low
       </label>
       </div>
+      </div>
+      <div className="ratingCard">
       <div><h3>Rating</h3></div>
       <div>
       <label>
@@ -105,6 +110,7 @@ const BooksDisplay = () => {
         />
         {ratingFilter}{" "}
       </label>
+      </div>
       </div>
       </div>
       <div className="mainBooksCard">
@@ -150,12 +156,14 @@ const BooksDisplay = () => {
               </p>
               <div>
                 {inCart(_id) ? (
-                  <button>
+                  <button className="button">
                     <NavLink to="/cart">Go to Cart</NavLink>{" "}
                   </button>
                 ) : (
-                  <button
+                  <button className="button"
                     onClick={() => 
+                    //  { navigate("/login");
+                    //   console.log(userToken);}
                       { userToken ? addToCart(item, userToken) : navigate("/login")}
                     }
                   >
@@ -167,11 +175,11 @@ const BooksDisplay = () => {
 
               <div>
                 {inWishlist(_id) ? (
-                  <button>
+                  <button className="button">
                     <NavLink to="/wishlist">Go to Wishlist</NavLink>
                   </button>
                 ) : (
-                  <button
+                  <button className="button"
                     onClick={() => {
                       userToken ?
                       addToWishlist(item, userToken) : navigate("/login")

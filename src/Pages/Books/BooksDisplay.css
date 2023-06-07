@@ -3,13 +3,17 @@
   flex-wrap: wrap;
   width: 75vw;
   margin: auto;
-}
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 2rem;
+  }
 
 .subBooksCard {
   margin: 10px;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   padding: 0px 20px 10px 20px;
   border-radius: 10px;
+  width: 200px;
 }
 
 .mainBooksDisplay {
@@ -22,11 +26,39 @@
 .sideBarBookDisplay {
   display: flex;
   flex-direction: column;
-  width: 25vw;
+  width: 20vw;
   flex-wrap: wrap;
+  overflow: scroll;
+  overflow-x: hidden;
+}
+
+body::-webkit-scrollbar-track {
+  background-color:  rgb(255, 191, 0);
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: rgb(255, 191, 0);
 }
 
 .clearButton {
   display: flex;
   justify-content: space-between;
+  margin-top: 1rem;
+  align-items: center;
+  margin: 0rem 2rem;
+}
+
+.categoriesCard {
+  text-align: left;
+  margin-left: 2rem;
+}
+
+.sortingCard {
+  text-align: left;
+  margin-left: 2rem;
+}
+
+.ratingCard {
+  text-align: left;
+  margin-left: 2rem;
 }

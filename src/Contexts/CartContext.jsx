@@ -9,7 +9,8 @@ export const CartProvider = ({ children }) => {
   const [cart, setCart] = useState([]);
   const { userToken } = useContext(AuthenticationContext);
 
-  const addToCart = async (product) => {
+  const addToCart = async (product, userToken) => {
+    console.log(product);
     try {
       const response = await axios.post(
         "/api/user/cart",
@@ -24,7 +25,9 @@ export const CartProvider = ({ children }) => {
         setCart(response.data.cart);
         toast.success("Added to cart");
       }
-    } catch (error) {
+    } 
+
+    catch (error) {
       console.error(error);
     }
   };

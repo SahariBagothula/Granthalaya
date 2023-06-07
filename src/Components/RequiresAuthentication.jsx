@@ -5,6 +5,6 @@ import { AuthenticationContext } from "../Contexts/AuthenticationContext";
 
 
 export const RequiresAuth = ({ children }) => {
-  const { auth } = useContext(AuthenticationContext);
-  return <>{auth.isLoggedIn ? children : <Navigate to="/login" />}</>;
+  const { userToken } = useContext(AuthenticationContext);
+  return <>{userToken ? children : <Navigate to="/login" />}</>;
 };

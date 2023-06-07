@@ -27,7 +27,7 @@ export const User = () => {
           <h3> Email : {user?.email} </h3>
           <>
             {" "}
-            {addedUser.map((item) => (
+            {addedUser?.map((item) => (
               <>
                 <p> {item.fullName} </p>{" "}
               </>
