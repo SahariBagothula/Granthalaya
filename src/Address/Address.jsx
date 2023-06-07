@@ -20,7 +20,6 @@ export const AddressForm = () => {
           color: "white",
           margin: "1rem",
           backgroundColor: "whitesmoke",
-          color: "#252525",
           borderRadius: "5px",
           width: "50%",
         }}
