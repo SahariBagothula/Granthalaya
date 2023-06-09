@@ -1,7 +1,6 @@
 import React, { useContext } from "react";
 
 import { NavLink, useNavigate } from "react-router-dom";
-import { InnerFooter } from "../../Components/InnerFooter";
 import { AuthenticationContext } from "../../Contexts/AuthenticationContext";
 import { User } from "../../User/Profile";
 
@@ -56,8 +55,6 @@ export const Login = () => {
           </p>
         </div>
       )}
-
-      {!auth.isLoggedIn && <InnerFooter />}
     </div>
   );
 };

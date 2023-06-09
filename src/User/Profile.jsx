@@ -2,7 +2,6 @@ import React, { useContext, useState } from "react";
 import { AuthenticationContext } from "../Contexts/AuthenticationContext";
 import { Login } from "../Pages/Login/Login";
 import "./Profile.css";
-import { InnerFooter } from "../Components/InnerFooter";
 import { AddressContext } from "../Contexts/AddressContext";
 import { AddressForm } from "../Address/Address";
 
@@ -63,7 +62,6 @@ export const User = () => {
           </div>
         </div>
       )}
-      {auth.isLoggedIn && <InnerFooter />}
     </div>
   );
 };

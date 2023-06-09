@@ -54,6 +54,7 @@ export const CartProvider = ({ children }) => {
         }
       );
       setCart(response.data.cart);
+      toast.success("Added to cart")
     } catch (error) {
       console.error(error);
     }
